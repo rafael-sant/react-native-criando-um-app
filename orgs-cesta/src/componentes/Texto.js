@@ -4,11 +4,11 @@ import { Text, StyleSheet } from 'react-native'
 export default function Texto({children, style}) {
   let estilos = styles.texto;   
   if(style?.fontWeight === "bold") { 
-    estilo = styles.textoNegrito
+    estilos = styles.textoNegrito
   }
 
   return (
-    <Text style={[style, estilo]}>{children}</Text>
+    <Text style={[style, estilos]}>{children}</Text>
   )
 }
 
